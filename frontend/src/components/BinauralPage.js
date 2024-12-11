@@ -47,7 +47,7 @@ const BinauralPage = () => {
             audioRef.current = null;
 
             try {
-                const response = await fetch('https://decentralized-task-manager-1.onrender.com/tasks', {
+                const response = await fetch('http://localhost:3000/tasks', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
