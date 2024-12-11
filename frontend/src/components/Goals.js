@@ -28,7 +28,7 @@ const Goals = () => {
         const goalData = { title: goalTitle, userAccountId };
 
         try {
-            const response = await axios.post('https://decentralized-task-manager-1.onrender.com/goals', goalData);
+            const response = await axios.post('http://localhost:3000/goals', goalData);
             const createdGoal = response.data.goal;
 
             setGoalList([...goalList, createdGoal]);
@@ -41,7 +41,7 @@ const Goals = () => {
     // Handle deleting a goal
     const handleDeleteGoal = async (goalId) => {
         try {
-            await axios.delete(`https://decentralized-task-manager-1.onrender.com/goals/${goalId}`);
+            await axios.delete(`http://localhost:3000/goals/${goalId}`);
             setGoalList(goalList.filter((goal) => goal.id !== goalId)); // Remove the deleted goal from the list
         } catch (error) {
             console.error("Error deleting goal:", error);
@@ -51,7 +51,7 @@ const Goals = () => {
     // Handle editing a goal
     const handleEditGoal = async (goalId, newTitle) => {
         try {
-            const response = await axios.put(`https://decentralized-task-manager-1.onrender.com/goals/${goalId}`, { title: newTitle });
+            const response = await axios.put(`http://localhost:3000/goals/${goalId}`, { title: newTitle });
             const updatedGoal = response.data.goal;
             setGoalList(goalList.map((goal) => (goal.id === goalId ? updatedGoal : goal)));
         } catch (error) {
