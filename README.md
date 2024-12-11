@@ -32,17 +32,17 @@ Clone this repository and navigate to the frontend directory. This command is re
 npm install
 ```
 
-2. Set up environment variables in backend directory
+2. Set up environment variables
    
    
-Create a .env file in the root of the project and add the following variables:
+Create a .env file in backend directory and add the following variables:
 
 
-HEDERA_ACCOUNT_ID = Your Hedera Account ID
+- HEDERA_ACCOUNT_ID = Your Hedera Account ID
 
-HEDERA_PRIVATE_KEY = Your Hedera Private Key
+- HEDERA_PRIVATE_KEY = Your Hedera Private Key
 
-HEDERA_TESTNET=true
+- HEDERA_TESTNET=true
 
 
 These values are required to interact with the Hedera network.
