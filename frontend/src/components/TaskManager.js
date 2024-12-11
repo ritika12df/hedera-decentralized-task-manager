@@ -20,7 +20,7 @@ const TaskManager = () => {
         const taskData = { title: taskTitle, status, userAccountId };
 
         try {
-            const response = await axios.post('https://decentralized-task-manager-1.onrender.com/tasks', taskData);
+            const response = await axios.post('http://localhost:3000/tasks', taskData);
 
             // Log the response to check the structure
             console.log("Response from backend:", response.data);
