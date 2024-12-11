@@ -1,0 +1,52 @@
+.binaural-page {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background: linear-gradient(to right, #121212, #1c1c1c);
+    padding: 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.h1 {
+    color: #00cc66; /* Hedera green */
+}
+
+.hedera-input input {
+    padding: 10px;
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid #00cc66;
+    border-radius: 5px;
+}
+
+.binaural-list {
+    list-style: none;
+    padding: 0;
+}
+
+.binaural-item button {
+    padding: 10px 20px;
+    margin: 10px;
+    background: #00cc66;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.binaural-item button:hover {
+    background: #00994c;
+}
+
+.now-playing {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #00cc66;
+}
+
+.rewards {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #00cc66;
+}

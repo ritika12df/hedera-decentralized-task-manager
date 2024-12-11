@@ -1,0 +1,184 @@
+/* General container for the Goals component */
+/* General container for the Goals component */
+.goals {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form to set account ID */
+.account-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.account-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+.account-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.account-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Goal form to add new goal */
+.form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+.form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form button:hover {
+    background-color: #218838;
+}
+
+/* Animated goal list */
+.goal-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* Goal item animations */
+.goal-item-enter {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.goal-item-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 500ms, transform 500ms;
+}
+
+.goal-item-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.goal-item-exit-active {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 500ms, transform 500ms;
+}
+
+.goal-list li {
+    background-color: #fff;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.goal-list li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.goal-list span {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.goal-list button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.goal-list button:hover {
+    background-color: #c82333;
+}
+
+/* Button for going back */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}
+
+/* Add some media queries for responsiveness */
+@media (max-width: 768px) {
+    .account-form,
+    .form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .account-form input,
+    .form input {
+        width: 90%;
+    }
+}
