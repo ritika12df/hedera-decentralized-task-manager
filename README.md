@@ -2,6 +2,12 @@
 
 This project is a decentralized task manager that integrates the Hedera blockchain to reward users with tokens upon completing tasks. It allows users to create tasks, set goals, play binaural beats for enhanced focus, and earn RS tokens as rewards for their progress.
 
+## Live Link 
+
+https://brilliant-frangipane-77f82b.netlify.app
+
+- Note - I have used free instance of render for backend which will spin down with inactivity, which can delay requests by 50 seconds or more.
+
 ## Features
 
 - Token Creation: Create and manage RS tokens on the Hedera testnet.
